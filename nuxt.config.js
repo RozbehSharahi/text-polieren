@@ -35,6 +35,8 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/google-fonts-module
+    '@nuxtjs/google-fonts',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
@@ -45,4 +47,10 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
+
+  googleFonts: {
+    families: {
+      'Antic+Slab': true,
+    },
+  },
 }

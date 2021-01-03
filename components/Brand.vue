@@ -1,7 +1,5 @@
 <template>
-  <div class="brand">
-    <img :src="'/icon.png'" alt="Text Polieren" />
-  </div>
+  <div class="brand">Text<br /><span>Polieren</span></div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
@@ -9,14 +7,17 @@ export default Vue.extend({})
 </script>
 <style lang="scss" scoped>
 .brand {
+  font-weight: 900;
+  text-transform: uppercase;
   margin-bottom: 20px;
-  text-align: right;
-  height: 30px;
+  line-height: 1;
+  font-size: 1.3em;
+  @apply text-primary;
+  padding: 0 0 10px 0;
+  border-bottom: 0 solid black;
 
-  > img {
-    width: auto;
-    height: 100%;
-    display: inline-block;
+  span {
+    color: #000;
   }
 }
 </style>
