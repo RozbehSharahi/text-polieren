@@ -1,6 +1,6 @@
 <template>
   <div class="brand">
-    <img :src="'/icon.png'" alt="Rozbeh Chiryai Sharahi" />
+    <img :src="'/icon.png'" alt="Text Polieren" />
   </div>
 </template>
 <script lang="ts">
