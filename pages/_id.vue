@@ -56,6 +56,19 @@ export default Vue.extend({
       eventService.$emit('background-change', backgroundImage)
     }
   },
+  head() {
+    const currentPage = this.currentPage as PageModel
+    return {
+      title: `${currentPage.getTitle()} // Text_Polieren`,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: currentPage.getDescription(),
+        },
+      ],
+    }
+  },
 })
 </script>
 

@@ -1,11 +1,12 @@
 <template>
   <sheet class="p-0">
-    <grid :spacing-x="50" class="min-h-full">
+    <grid :spacing-x="0" class="min-h-full">
       <div class="sm:w-2/3">
         <div class="p-5 sm:p-20 text-0.8 sm:text-1">
           <nuxt-content :document="page.getDocument()" />
-          <nuxt-link :to="nextPage.getPath()">
+          <nuxt-link :to="nextPage.getPath()" class="clearfix">
             <btn class="mt-10">
+              <font-awesome-icon icon="chevron-down" />
               Weiter zu <strong>{{ nextPage.getTitle() }} </strong>
             </btn>
           </nuxt-link>

@@ -10,10 +10,11 @@ export default Vue.extend({})
 <style lang="scss" scoped>
 .button {
   padding: 10px 20px;
-  color: #fff;
-  @apply bg-primary;
   transition: all 300ms;
-  border-top: 5px solid #000;
+  border: 3px solid;
+  @apply border-primary;
+  @apply text-primary;
+  border-radius: 8px;
 
   &:hover {
     transform: scale(1.1);
