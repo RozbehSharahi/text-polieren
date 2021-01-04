@@ -14,6 +14,7 @@
         </nuxt-link>
       </li>
     </ul>
+    <div class="footer">&copy; 2021 René Salim</div>
   </div>
 </template>
 <script lang="ts">
@@ -63,6 +64,7 @@ export default Vue.extend({
       display: block;
       border-bottom: 1px solid #ddd;
       padding: 5px 30px;
+      text-transform: uppercase;
     }
 
     &:last-child {
@@ -74,6 +76,12 @@ export default Vue.extend({
       @apply bg-primary;
       color: #fff;
     }
+  }
+
+  .footer {
+    margin-top: 20px;
+    font-size: 0.7em;
+    text-align: right;
   }
 }
 </style>
