@@ -5,9 +5,9 @@
         <div class="p-5 sm:p-20 text-0.8 sm:text-1">
           <nuxt-content :document="page.getDocument()" />
           <nuxt-link :to="nextPage.getPath()">
-            <btn class="mt-10"
-              >Weiter zu <strong>{{ nextPage.getTitle() }}</strong></btn
-            >
+            <btn class="mt-10">
+              Weiter zu <strong>{{ nextPage.getTitle() }} </strong>
+            </btn>
           </nuxt-link>
         </div>
       </div>
