@@ -20,7 +20,7 @@ export default Vue.extend({
     Background,
     Page,
   },
-  async asyncData(ctx: Context): Promise<any> {
+  async asyncData(ctx: any): Promise<any> {
     return {
       pages: await ctx.$content('pages').fetch(),
     }
