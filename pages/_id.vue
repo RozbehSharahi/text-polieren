@@ -2,7 +2,11 @@
   <div>
     <background />
     <container class="relative">
-      <page :pages="pagesProcessed" :page="currentPage" />
+      <page
+        :key="currentPage.getPath()"
+        :pages="pagesProcessed"
+        :page="currentPage"
+      />
     </container>
   </div>
 </template>

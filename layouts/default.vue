@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 body {
   font-family: 'Antic Slab', sans-serif;
   font-size: 20px;
@@ -29,5 +29,24 @@ h2 {
 
 p {
   margin-bottom: 20px;
+}
+
+$transitionSpeed: 0.3s;
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity $transitionSpeed;
+
+  .sheet {
+    transition: margin $transitionSpeed, opacity $transitionSpeed, transform $transitionSpeed;
+  }
+}
+.page-enter,
+.page-leave-to {
+  .sheet {
+    opacity: 0;
+    transform: perspective(600px) rotateY(2deg);
+    pointer-events: none;
+  }
 }
 </style>
