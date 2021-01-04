@@ -1,13 +1,22 @@
 <template>
   <div>
+    <background />
     <Nuxt />
   </div>
 </template>
+<script lang="ts">
+import Vue from 'vue'
+import Background from '~/components/Background.vue'
 
+export default Vue.extend({
+  components: { Background },
+})
+</script>
 <style lang="scss">
 body {
   font-family: 'Antic Slab', sans-serif;
   font-size: 20px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -38,7 +47,8 @@ $transitionSpeed: 0.4s;
   transition: opacity $transitionSpeed;
 
   .sheet {
-    transition: margin $transitionSpeed, opacity $transitionSpeed, transform $transitionSpeed;
+    transition: margin $transitionSpeed, opacity $transitionSpeed,
+      transform $transitionSpeed;
   }
 }
 .page-enter,

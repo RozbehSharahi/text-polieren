@@ -2,6 +2,7 @@
 title: Homepage
 description: René Salim
 priority: 10000
+background: candles.jpg
 ---
 # René Salim
 

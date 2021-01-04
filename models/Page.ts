@@ -4,6 +4,7 @@ interface IPage {
   description: string
   content: string
   priority: string | undefined
+  background: string | undefined
 }
 
 export default class Page {
@@ -31,6 +32,10 @@ export default class Page {
 
   public getPriority(): number {
     return parseInt(this.page.priority || '0')
+  }
+
+  public getBackgroundImage(): string {
+    return this.page.background || 'candles.jpg'
   }
 
   public getPath(): string {

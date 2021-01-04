@@ -1,6 +1,5 @@
 <template>
   <div>
-    <background />
     <container class="relative">
       <page
         :key="currentPage.getPath()"
@@ -14,14 +13,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import Container from '~/components/Container.vue'
-import Background from '~/components/Background.vue'
 import Page from '~/components/Page.vue'
 import PageModel from '~/models/Page'
+import eventService from '~/services/event-service'
 
 export default Vue.extend({
   components: {
     Container,
-    Background,
     Page,
   },
   async asyncData(ctx: any): Promise<any> {
@@ -43,6 +41,10 @@ export default Vue.extend({
         pagesProcessed.find((v) => v.getPath() === this.$route.fullPath) || null
       )
     },
+  },
+  mounted() {
+    const backgroundImage = `/backgrounds/${this.currentPage.getBackgroundImage()}`
+    eventService.$emit('background-change', backgroundImage)
   },
 })
 </script>

@@ -1,6 +1,7 @@
 ---
 title: Meine Referenzen
 description: Hier sieht man alle Referenzen
+background: wild.jpg
 ---
 # Der Titel der Seite is Referenzen
 

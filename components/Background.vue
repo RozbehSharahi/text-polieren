@@ -1,9 +1,27 @@
 <template>
-  <div class="background"></div>
+  <transition name="fade">
+    <div
+      :key="image"
+      class="background"
+      :style="{ 'background-image': image && `url(${image})` }"
+    ></div>
+  </transition>
 </template>
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({})
+import eventService from '~/services/event-service'
+export default Vue.extend({
+  data(): { image: string | null } {
+    return {
+      image: null,
+    }
+  },
+  mounted(): void {
+    eventService.$on('background-change', (image: string) => {
+      this.image = image
+    })
+  },
+})
 </script>
 <style lang="scss" scoped>
 .background {
@@ -12,7 +30,20 @@ export default Vue.extend({})
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('./../assets/images/bg1.jpg') no-repeat center;
+  background: #000 no-repeat center;
   background-size: cover;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 1000ms;
+  transition-timing-function: ease-out;
+}
+.fade-leave-active {
+  opacity: 1;
+}
+.fade-enter {
+  opacity: 0;
+  transform: scale(1.2) rotate(2deg);
 }
 </style>
