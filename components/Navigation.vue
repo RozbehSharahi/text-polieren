@@ -1,20 +1,39 @@
 <template>
   <div class="navigation">
-    <brand />
+    <nuxt-link :to="'/'">
+      <brand />
+    </nuxt-link>
     <ul>
-      <li><a>Homepage</a></li>
-      <li><a>Über mich</a></li>
-      <li><a>Kontakt</a></li>
+      <li
+        v-for="node in pages"
+        :key="node.getPath()"
+        :class="{ active: node.getPath() === page.getPath() }"
+      >
+        <nuxt-link :to="node.getPath()">
+          {{ node.getTitle() }}
+        </nuxt-link>
+      </li>
     </ul>
   </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 import Brand from '~/components/Brand.vue'
+import Page from '~/models/Page'
 
 export default Vue.extend({
   components: {
     Brand,
+  },
+  props: {
+    pages: {
+      type: Array,
+      required: true,
+    },
+    page: {
+      type: Page,
+      default: null,
+    },
   },
 })
 </script>
@@ -33,12 +52,26 @@ export default Vue.extend({
   &:hover {
   }
 
+  ul {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+
   li {
-    border-bottom: 1px solid #ddd;
-    padding: 5px 0;
+    > a {
+      display: block;
+      border-bottom: 1px solid #ddd;
+      padding: 5px 30px;
+    }
 
     &:last-child {
       border-bottom: none;
+    }
+
+    &:hover,
+    &.active {
+      @apply bg-primary;
+      color: #fff;
     }
   }
 }
