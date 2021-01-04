@@ -40,7 +40,7 @@ p {
   margin-bottom: 20px;
 }
 
-$transitionSpeed: 0.4s;
+$transitionSpeed: 0.8s;
 
 .page-enter-active,
 .page-leave-active {

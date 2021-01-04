@@ -44,6 +44,6 @@ export default Vue.extend({
 }
 .fade-enter {
   opacity: 0;
-  transform: scale(1.2) rotate(2deg);
+  transform: scale(1.1) rotate(1.5deg);
 }
 </style>
