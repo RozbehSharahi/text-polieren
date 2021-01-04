@@ -3,10 +3,11 @@ interface IPage {
   title: string
   description: string
   content: string
+  priority: string | undefined
 }
 
 export default class Page {
-  private page: IPage
+  private readonly page: IPage
 
   constructor(page: IPage) {
     this.page = page
@@ -26,6 +27,10 @@ export default class Page {
 
   public getDocument(): IPage {
     return this.page
+  }
+
+  public getPriority(): number {
+    return parseInt(this.page.priority || '0')
   }
 
   public getPath(): string {

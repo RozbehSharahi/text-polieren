@@ -58,6 +58,7 @@ export default Vue.extend({
   }
 
   li {
+    transition: all 0.3s;
     > a {
       display: block;
       border-bottom: 1px solid #ddd;

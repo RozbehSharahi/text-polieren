@@ -32,7 +32,10 @@ export default Vue.extend({
   computed: {
     pagesProcessed(): PageModel[] {
       // @ts-ignore
-      return this.pages.map((v: any) => new PageModel(v))
+      return this.pages
+        .map((v: any) => new PageModel(v))
+        .sort((a: PageModel, b: PageModel) => a.getPriority() - b.getPriority())
+        .reverse()
     },
     currentPage(): PageModel | null {
       const pagesProcessed = this.pagesProcessed as PageModel[]

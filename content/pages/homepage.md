@@ -1,6 +1,7 @@
 ---
 title: Homepage
 description: René Salim
+priority: 10000
 ---
 # René Salim
 

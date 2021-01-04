@@ -31,7 +31,7 @@ p {
   margin-bottom: 20px;
 }
 
-$transitionSpeed: 0.3s;
+$transitionSpeed: 0.4s;
 
 .page-enter-active,
 .page-leave-active {
@@ -45,7 +45,7 @@ $transitionSpeed: 0.3s;
 .page-leave-to {
   .sheet {
     opacity: 0;
-    transform: perspective(600px) rotateY(4deg) translateZ(-50px);
+    transform: perspective(600px) rotateY(-10deg) translateZ(-30px);
     pointer-events: none;
   }
 }
