@@ -27,11 +27,13 @@ export default Vue.extend({
   },
   computed: {
     pagesProcessed(): PageModel[] {
-      return this.pages.map((v) => new PageModel(v))
+      // @ts-ignore
+      return this.pages.map((v: any) => new PageModel(v))
     },
-    currentPage() {
-      return this.pagesProcessed.find(
-        (v) => v.getPath() === this.$route.fullPath
+    currentPage(): PageModel | null {
+      const pagesProcessed = this.pagesProcessed as PageModel[]
+      return (
+        pagesProcessed.find((v) => v.getPath() === this.$route.fullPath) || null
       )
     },
   },
