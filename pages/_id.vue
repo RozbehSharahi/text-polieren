@@ -43,7 +43,9 @@ export default Vue.extend({
     },
   },
   mounted() {
-    const backgroundImage = `/backgrounds/${this.currentPage.getBackgroundImage()}`
+    const backgroundImage = this.currentPage
+      ? `/backgrounds/${this.currentPage.getBackgroundImage()}`
+      : null
     eventService.$emit('background-change', backgroundImage)
   },
 })
