@@ -55,7 +55,7 @@ $transitionSpeed: 0.8s;
 .page-leave-to {
   .sheet {
     opacity: 0;
-    transform: perspective(600px) rotateY(-10deg) translateZ(-30px);
+    transform: perspective(600px) scale(0.7) rotateY(-10deg) translateZ(-30px);
     pointer-events: none;
   }
 }
