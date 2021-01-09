@@ -1,6 +1,10 @@
 export default {
   target: 'static',
-  // Global page headers (https://go.nuxtjs.dev/config-head)
+
+  router: {
+    prefetchLinks: false,
+  },
+
   head: {
     title: 'Text_Polieren',
     meta: [
