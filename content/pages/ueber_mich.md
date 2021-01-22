@@ -7,4 +7,4 @@ background: streets.jpg
 
 Alles was es über mich zu Sagen gibt, ist folgendes:
 
-euda dieses ganze it gefasel ur fad euda
+Euda dieses ganze it gefasel ur fad euda
