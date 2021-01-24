@@ -36,7 +36,7 @@ export default Vue.extend({
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 1000ms;
+  transition: all 500ms;
   transition-timing-function: ease-out;
 }
 .fade-leave-active {
