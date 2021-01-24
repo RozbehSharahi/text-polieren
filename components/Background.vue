@@ -32,6 +32,17 @@ export default Vue.extend({
   height: 100%;
   background: #000 no-repeat center;
   background-size: cover;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    @apply bg-primary;
+    opacity: 0.5;
+  }
 }
 
 .fade-enter-active,

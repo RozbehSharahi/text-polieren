@@ -56,7 +56,7 @@ $transitionSpeed: 0.7s;
 .page-leave-to {
   .sheet {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(-20px);
     margin-top: 200px;
     pointer-events: none;
   }
