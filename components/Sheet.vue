@@ -14,8 +14,8 @@ export default Vue.extend({})
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 35px 71px 0 rgba(0, 0, 0, 0.35);
   overflow: hidden;
-  border: 1px dashed;
-  @apply border-primary;
+  border: 20px solid #fff;
+  /*@apply border-primary;*/
 
   @screen sm {
     padding: 30px;
