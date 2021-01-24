@@ -1,9 +1,12 @@
 {
+  "engines": {
+    "node": "^14.0.0"
+  },
   "name": "nuxt-base",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "local-server": "yarn install & nuxt-ts",
+    "local-server": "yarn install && nuxt-ts",
     "dev": "nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
