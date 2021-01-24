@@ -1,7 +1,7 @@
 ---
 title: Fuck Off
 description: How to fuck off
-background: schreibmaschine.jpg
+background: /backgrounds/schreibmaschine.jpg
 ---
 # Fuck off
 
