@@ -41,7 +41,7 @@ export default Vue.extend({
     height: 100%;
     content: ' ';
     @apply bg-primary;
-    opacity: 0.5;
+    opacity: 0;
   }
 }
 
