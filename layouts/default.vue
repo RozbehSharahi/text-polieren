@@ -40,7 +40,7 @@ p {
   margin-bottom: 20px;
 }
 
-$transitionSpeed: 0.8s;
+$transitionSpeed: 0.7s;
 
 .page-enter-active,
 .page-leave-active {
@@ -51,11 +51,13 @@ $transitionSpeed: 0.8s;
       transform $transitionSpeed;
   }
 }
+
 .page-enter,
 .page-leave-to {
   .sheet {
     opacity: 0;
-    transform: perspective(600px) scale(0.7) rotateY(-10deg) translateZ(-30px);
+    transform: translateY(-20px);
+    margin-top: 200px;
     pointer-events: none;
   }
 }

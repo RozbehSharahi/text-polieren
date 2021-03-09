@@ -1,7 +1,7 @@
 ---
 title: Über mich
 description: Alles über mich
-background: streets.jpg
+background: /backgrounds/streets.jpg
 ---
 # Über mich
 

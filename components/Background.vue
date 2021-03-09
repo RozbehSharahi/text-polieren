@@ -32,11 +32,22 @@ export default Vue.extend({
   height: 100%;
   background: #000 no-repeat center;
   background-size: cover;
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    @apply bg-primary;
+    opacity: 0;
+  }
 }
 
 .fade-enter-active,
 .fade-leave-active {
-  transition: all 1000ms;
+  transition: all 500ms;
   transition-timing-function: ease-out;
 }
 .fade-leave-active {
