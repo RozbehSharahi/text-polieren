@@ -1,10 +1,10 @@
 ---
-title: Fuck Off
-description: How to fuck off
+title: deine referenzen
+description: referenzen vong dir
 background: schreibmaschine.jpg
 ---
-# Fuck off
+# deine referenzen (hier stand vorher hashtag fuck off)
 
-Please follow the instructionS in the title.
-verdammt nochmal!
-diese neue änderung fünf minuten live beaam
+kurz vorher hieß diese seite noch fuck off.
+Jetzt heißt sie
+deine referenzen
