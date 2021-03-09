@@ -15,7 +15,6 @@ import Vue from 'vue'
 import Container from '~/components/Container.vue'
 import Page from '~/components/Page.vue'
 import PageModel from '~/models/Page'
-import eventService from '~/services/event-service'
 import assetService from '~/services/asset-service'
 
 export default Vue.extend({
@@ -46,14 +45,7 @@ export default Vue.extend({
   async mounted() {
     // preload images
     for (const page of this.pagesProcessed) {
-      await assetService.preloadImage(
-        `/backgrounds/${page.getBackgroundImage()}`
-      )
-    }
-    // set background
-    if (this.currentPage) {
-      const backgroundImage = `/backgrounds/${this.currentPage.getBackgroundImage()}`
-      eventService.$emit('background-change', backgroundImage)
+      await assetService.preloadImage(page.getBackgroundImage())
     }
   },
   head() {

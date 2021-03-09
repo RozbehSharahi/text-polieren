@@ -1,7 +1,7 @@
 ---
 title: sgeht
 description: wie was geht ab
-background: schreibmaschine.jpg
+background: /backgrounds/schreibmaschine.jpg
 ---
 # alter sgeht
 
