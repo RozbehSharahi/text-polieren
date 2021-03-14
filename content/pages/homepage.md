@@ -1,12 +1,13 @@
 ---
-title: Homepage
-description: René Salim
+title: home
+description: homepage
 priority: 10000
 background: /backgrounds/candles.jpg
 ---
 # René Salim
 
-Look, just because I don't be givin' no man a foot massage don't
+Look, just because
+I don't be givin' no man a foot massage don't
 make it right for Marsellus to throw Antwone into a glass
 motherfuckin' house, fuckin' up the way the nigger talks.
 Motherfucker do that shit to me, he better paralyze my ass, 'cause
