@@ -9,7 +9,7 @@ export default Vue.extend({})
 </script>
 <style lang="scss" scoped>
 .container {
-  max-width: 1200px;
+  max-width: 800px;
   padding: 0 10px;
   margin: 0 auto;
 }

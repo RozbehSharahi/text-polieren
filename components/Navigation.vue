@@ -43,12 +43,9 @@ export default Vue.extend({
   margin-bottom: 20px;
   font-size: 1em;
   padding: 30px;
-  background: rgba(255, 255, 255, 1);
   box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.1);
   border-color: rgba(0, 0, 0, 0.2);
   transition: all 0.3s;
-  border-bottom-left-radius: 0;
-  border-left: 1px solid #ddd;
 
   &:hover {
   }

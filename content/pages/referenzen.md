@@ -1,7 +1,7 @@
 ---
 title: Referenzen
 description: Hier sieht man alle Referenzen
-background: /backgrounds/wild.jpg
+background: /backgrounds/candles.jpg
 ---
 # Referenzen
 

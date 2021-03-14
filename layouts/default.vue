@@ -17,6 +17,7 @@ body {
   font-family: 'Antic Slab', sans-serif;
   font-size: 20px;
   overflow-x: hidden;
+  background: #000;
 }
 
 h1 {
@@ -25,6 +26,13 @@ h1 {
   font-size: 2.5em;
   text-transform: uppercase;
   line-height: 1.1em;
+  @apply bg-primary;
+  background: #000;
+  padding: 5px 10px;
+  border-bottom: 3px solid;
+  @apply border-primary;
+  color: #fff;
+  display: inline-block;
 }
 
 h2 {
@@ -38,6 +46,7 @@ h2 {
 
 p {
   margin-bottom: 20px;
+  //text-shadow: 1px 1px 10px #000;
 }
 
 $transitionSpeed: 0.7s;

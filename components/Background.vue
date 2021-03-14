@@ -32,6 +32,7 @@ export default Vue.extend({
   height: 100%;
   background: #000 no-repeat center;
   background-size: cover;
+  opacity: 0.5;
 
   &:after {
     position: absolute;

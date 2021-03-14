@@ -1,19 +1,18 @@
 <template>
   <sheet class="p-0">
     <grid :spacing-x="0" class="min-h-full">
-      <div class="sm:w-2/3">
+      <div class="sm:w-full">
         <div class="p-5 sm:p-20 text-0.8 sm:text-1">
           <nuxt-content :document="page.getDocument()" />
-          <nuxt-link :to="nextPage.getPath()" class="clearfix">
-            <btn class="mt-10">
-              <font-awesome-icon icon="chevron-down" />
-              Weiter zu <strong>{{ nextPage.getTitle() }} </strong>
-            </btn>
-          </nuxt-link>
+          <div class="text-right -mt-6">
+            <nuxt-link :to="nextPage.getPath()" class="clearfix">
+              <btn class="mt-10">
+                <font-awesome-icon icon="chevron-right" />
+                {{ nextPage.getTitle() }}
+              </btn>
+            </nuxt-link>
+          </div>
         </div>
-      </div>
-      <div class="sm:w-1/3">
-        <navigation :pages="pages" :page="page" class="h-full" />
       </div>
     </grid>
   </sheet>

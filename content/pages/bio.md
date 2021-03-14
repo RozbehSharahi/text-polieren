@@ -1,7 +1,7 @@
 ---
 title: Bio
 description: kurze Bio
-background: /backgrounds/streets.jpg
+background: /backgrounds/candles.jpg
 ---
 # kurze bio bzw. hashtag kurze bio
 
