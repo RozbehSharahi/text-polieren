@@ -20,6 +20,11 @@ body {
   background: #000;
 }
 
+.nuxt-content-editor {
+  background: #000000;
+  color: #fff;
+}
+
 h1 {
   margin-bottom: 30px;
   font-weight: 900;
