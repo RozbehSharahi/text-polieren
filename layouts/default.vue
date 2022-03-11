@@ -28,17 +28,10 @@ body {
 h1 {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 1.1em;
   line-height: 1.1em;
-  @apply bg-primary;
-  background: #000;
-  padding: 5px 10px 5px 10px;
-  margin-left: -10px;
-  border-bottom: 3px solid;
-  @apply border-primary;
-  color: #fff;
-  display: inline-block;
+  text-shadow: 4px 4px 0 #ff0d75;
+  @apply text-primary;
 }
 
 h2 {

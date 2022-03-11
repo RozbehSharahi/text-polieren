@@ -1,14 +1,15 @@
+<!--suppress HtmlUnknownTag -->
 <template>
   <sheet class="p-0">
     <grid :spacing-x="0" class="min-h-full">
       <div class="sm:w-full">
         <div class="p-5 sm:p-20 text-0.8 sm:text-1">
           <nuxt-content :document="page.getDocument()" />
-          <div class="text-right -mt-6">
+          <div>
             <nuxt-link :to="nextPage.getPath()" class="clearfix">
               <btn class="mt-10">
-                <font-awesome-icon icon="chevron-right" />
                 {{ nextPage.getTitle() }}
+                ¶¶
               </btn>
             </nuxt-link>
           </div>
@@ -21,7 +22,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import Grid from '~/components/Grid.vue'
-import Navigation from '~/components/Navigation.vue'
 import Sheet from '~/components/Sheet.vue'
 import Btn from '~/components/Btn.vue'
 import Page from '~/models/Page'
@@ -29,7 +29,6 @@ import Page from '~/models/Page'
 export default Vue.extend({
   components: {
     Grid,
-    Navigation,
     Sheet,
     Btn,
   },

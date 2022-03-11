@@ -1,5 +1,5 @@
 ---
-title: home
+title: text polieren
 description: homepage
 priority: 10000
 background: /backgrounds/buchpolieren.jpg

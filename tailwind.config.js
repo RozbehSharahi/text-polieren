@@ -64,7 +64,10 @@ module.exports = {
         900: '#742a2a',
       },
       primary: {
-        default: '#20B2AA',
+        default: '#0dfbff',
+      },
+      secondary: {
+        default: '#ff0d75',
       },
     },
     spacing: {
