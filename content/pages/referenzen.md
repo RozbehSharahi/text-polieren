@@ -1,7 +1,7 @@
 ---
 title: Referenzen
 description: Hier sieht man alle Referenzen
-background: /backgrounds/buch-offen.jpg
+background: /backgrounds/buch_offen.jpg
 ---
 # Referenzen
 
