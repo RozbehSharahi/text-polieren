@@ -2,7 +2,7 @@
 title: home
 description: homepage
 priority: 10000
-background: /backgrounds/candles.jpg
+background: /backgrounds/DSCN2736_bwtext.JPG
 ---
 # René Salim
 
