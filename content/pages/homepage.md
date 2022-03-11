@@ -4,4 +4,11 @@ description: homepage
 priority: 10000
 background: /backgrounds/buchpolieren.jpg
 ---
-# René Salim
+# texte polieren
+
+oberfläche  
+konsistenz  
+diskriminierungsarme sprache
+
+rené sami salim  
+hallo@textpolieren.eu
