@@ -2,6 +2,7 @@
 title: referenzen
 description: Hier sieht man alle Referenzen
 background: /backgrounds/buch_offen.jpg
+titlePosition: right
 ---
 # referenzen
 

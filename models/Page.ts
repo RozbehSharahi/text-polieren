@@ -1,3 +1,5 @@
+type align = 'left' | 'right' | 'center'
+
 interface IPage {
   path: string
   title: string
@@ -5,6 +7,7 @@ interface IPage {
   content: string
   priority: string | undefined
   background: string | undefined
+  titlePosition: align | undefined
 }
 
 export default class Page {
@@ -16,6 +19,10 @@ export default class Page {
 
   public getTitle(): string {
     return this.page.title
+  }
+
+  public getTitlePosition(): align {
+    return this.page.titlePosition || 'left'
   }
 
   public getDescription(): string {

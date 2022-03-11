@@ -3,7 +3,10 @@
   <sheet class="p-0">
     <grid :spacing-x="0" class="min-h-full">
       <div class="sm:w-full">
-        <div class="p-5 sm:p-20 text-0.8 sm:text-1">
+        <div
+          class="p-5 sm:p-20 text-0.8 sm:text-1"
+          :class="`titles-${page.getTitlePosition()}`"
+        >
           <nuxt-content :document="page.getDocument()" />
           <div>
             <nuxt-link :to="nextPage.getPath()" class="clearfix">
@@ -60,4 +63,21 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.titles-right {
+  ::v-deep h1,
+  ::v-deep h2,
+  ::v-deep h3,
+  ::v-deep h4 {
+    text-align: right;
+  }
+}
+.titles-center {
+  ::v-deep h1,
+  ::v-deep h2,
+  ::v-deep h3,
+  ::v-deep h4 {
+    text-align: center;
+  }
+}
+</style>

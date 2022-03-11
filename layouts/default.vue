@@ -15,7 +15,7 @@ export default Vue.extend({
 <style lang="scss">
 body {
   font-family: 'Antic Slab', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   overflow-x: hidden;
   background: #000;
 }
@@ -28,7 +28,7 @@ body {
 h1 {
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 1.3em;
   line-height: 1.1em;
   text-shadow: 4px 4px 0 #ff0d75;
   @apply text-primary;
