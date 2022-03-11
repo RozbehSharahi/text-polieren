@@ -2,6 +2,6 @@
 title: home
 description: homepage
 priority: 10000
-background: /backgrounds/DSCN2736_bw.jpg
+background: /backgrounds/buchpolieren.jpg
 ---
 # René Salim
