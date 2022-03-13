@@ -5,8 +5,7 @@ priority: 10000
 background: /backgrounds/buchpolieren.jpg
 ---
 # texte polieren
-
-lektorat/korrektorat
+lektorat/korrektorat  
 
 oberfläche  
 konsistenz  
