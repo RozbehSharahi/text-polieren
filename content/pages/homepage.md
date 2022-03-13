@@ -9,8 +9,8 @@ lektorat/korrektorat, transkription
 
 oberfläche  
 konsistenz  
-stilfragen  
-diskriminierungsbewusste sprache  
+stilfragen
+privilegienbewusste sprache
 
 soziolinguistische transkription nach TiQ  
 
