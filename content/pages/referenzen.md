@@ -6,7 +6,7 @@ titlePosition: right
 ---
 # referenzen
 
-Referenzen (Auszug):
+(Auswahl)
 
 Dolezalek, Isabelle; Guidetti, Mattia (Hrsg.) (2022): Rediscovering Objects from Islamic Lands in Enlightenment Europe. New York: Routledge.
 
