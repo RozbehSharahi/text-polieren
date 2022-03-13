@@ -6,6 +6,8 @@ background: /backgrounds/buchpolieren.jpg
 ---
 # texte polieren
 
+lektorat/korrektorat
+
 oberfläche  
 konsistenz  
 diskriminierungsarme sprache
