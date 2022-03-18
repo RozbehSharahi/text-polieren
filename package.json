@@ -11,8 +11,8 @@
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
-    "generate:for-github-pages": "ROUTER_BASE=/text-polieren/ nuxt-ts generate",
-    "generate:for-dist": "ROUTER_BASE=/dist/ nuxt-ts generate",
+    "generate:for-github-pages": "BASE_URL=/text-polieren/ nuxt-ts generate",
+    "generate:for-dist": "BASE_URL=/dist/ nuxt-ts generate",
     "heroku-postbuild": "nuxt-ts generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "yarn lint:js"

@@ -37,14 +37,9 @@ export default Vue.extend({
     },
     currentPage(): PageModel | null {
       const pagesProcessed = this.pagesProcessed as PageModel[]
-      const currentPage =
-        pagesProcessed.find((v) => v.getPath() === this.$route.fullPath) || null
-      // eslint-disable-next-line no-console
-      console.log(
-        this.$route.fullPath,
-        pagesProcessed.map((p) => p.getPath())
+      return (
+        pagesProcessed.find((v) => v.matchesPath(this.$route.fullPath)) || null
       )
-      return currentPage
     },
   },
   async mounted() {
