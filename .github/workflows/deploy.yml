@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: '14.x'
           registry-url: 'https://registry.npmjs.org'
-        run: |
-          yarn
-          yarn generate
+
+      - run: yarn
+      - run: yarn generate
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.2.5
