@@ -3,6 +3,7 @@ export default {
 
   router: {
     prefetchLinks: false,
+    base: process.env.ROUTER_BASE || '/',
   },
 
   head: {
@@ -53,9 +54,7 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    publicPath: process.env.PUBLIC_PATH || '/',
-  },
+  build: {},
 
   googleFonts: {
     families: {
