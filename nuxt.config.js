@@ -53,7 +53,9 @@ export default {
   content: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {},
+  build: {
+    publicPath: process.env.PUBLIC_PATH || '/',
+  },
 
   googleFonts: {
     families: {
