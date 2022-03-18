@@ -40,7 +40,10 @@ export default Vue.extend({
       const currentPage =
         pagesProcessed.find((v) => v.getPath() === this.$route.fullPath) || null
       // eslint-disable-next-line no-console
-      console.log(currentPage?.getTitle())
+      console.log(
+        this.$route.fullPath,
+        pagesProcessed.map((p) => p.getPath())
+      )
       return currentPage
     },
   },
