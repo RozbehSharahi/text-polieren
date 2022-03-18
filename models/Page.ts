@@ -42,7 +42,13 @@ export default class Page {
   }
 
   public getBackgroundImage(): string {
-    return this.page.background || 'candles.jpg'
+    let image = this.page.background || '/backgrounds/buchpolieren.jpg'
+
+    if (!image.match(/^https?:\/\//)) {
+      image = process.env.baseUrl + image
+    }
+
+    return image
   }
 
   public getPath(): string {

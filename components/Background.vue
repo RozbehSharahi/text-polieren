@@ -3,7 +3,7 @@
     <div
       :key="image"
       class="background"
-      :style="{ 'background-image': image && `url(${base}${image})` }"
+      :style="{ 'background-image': image && `url(${image})` }"
     ></div>
   </transition>
 </template>
@@ -11,10 +11,9 @@
 import Vue from 'vue'
 import eventService from '~/services/event-service'
 export default Vue.extend({
-  data(): { image: string | null; base: string } {
+  data(): { image: string | null } {
     return {
       image: null,
-      base: (this.$router.options.base || '/').replace(/\/$/, ''),
     }
   },
   mounted(): void {

@@ -1,9 +1,16 @@
+const ROUTER_BASE = process.env.ROUTER_BASE || '/'
+
 export default {
   target: 'static',
 
+  env: {
+    routerBase: ROUTER_BASE,
+    baseUrl: ROUTER_BASE.replace(/\/$/, ''),
+  },
+
   router: {
     prefetchLinks: false,
-    base: process.env.ROUTER_BASE || '/',
+    base: ROUTER_BASE,
   },
 
   head: {
@@ -17,7 +24,7 @@ export default {
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: (process.env.ROUTER_BASE || '/') + 'favicon.ico',
+        href: ROUTER_BASE + 'favicon.ico',
       },
     ],
   },
