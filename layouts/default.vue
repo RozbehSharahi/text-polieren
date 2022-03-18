@@ -45,7 +45,6 @@ h2 {
 
 p {
   margin-bottom: 20px;
-  //text-shadow: 1px 1px 10px #000;
 }
 
 $transitionSpeed: 0.7s;
