@@ -57,7 +57,9 @@ export default class Page {
   }
 
   public matchesPath(path: string): boolean {
-    if (this.getPath() === '/' && path === '/') return true
-    return this.getPath() === path.replace(/\/$/, '')
+    return (
+      path === this.getPath() ||
+      path.replace(/\/$/, '') === this.getPath().replace(/\/$/, '')
+    )
   }
 }

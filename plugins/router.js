@@ -8,7 +8,7 @@ export default async function ({ app }) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   app.router.afterEach(async (to) => {
     await timeout(50)
-    const newPage = pages.find((v) => v.getPath() === to.fullPath)
+    const newPage = pages.find((v) => v.matchesPath(to.fullPath))
     eventService.$emit('background-change', newPage.getBackgroundImage())
   })
 }
